@@ -242,7 +242,7 @@ navbar:
 # 页脚
 footer:
     # Copyright text
-    copyright: © 2024
+    #copyright: © 2024
     # Links to be shown on the right of the footer section
     # 右侧超链接设置
     links:
@@ -315,7 +315,7 @@ donates:
     -
         type: wechat
         # Wechat qrcode image URL
-        qrcode: '../img/wechatpay.jpg'
+        qrcode: 'https://im.gurl.eu.org/file/c3754aa9a04ffd1b67245.png'
     # "Afdian.net" 捐赠按钮配置
     #-
     #    type: afdian
