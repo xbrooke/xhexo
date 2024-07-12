@@ -142,11 +142,11 @@ version: 5.1.0
 # Icarus 主题样式，一种默认，一种赛博朋克"default" or "cyberpunk"
 variant: default
 # 顶部logo 设置你站点的logo。 此logo会显示在导航栏和页脚。 图片或者是文字
-logo: /img/logo.png
+logo: ../img/logo.png
 # 页面元数据配置
 head:
     # 浏览器图标
-    favicon: /img/logo.png
+    favicon: ../img/logo.png
     # Web应用程序清单配置 Icarus支持基本的PWAmanifest.json的生成与Meta标签
     # https://developer.mozilla.org/en-US/docs/Web/Manifest
     manifest:
@@ -310,12 +310,12 @@ donates:
     -
         type: alipay
         # Alipay qrcode image URL
-        qrcode: '/img/alipay.jpg'
+        qrcode: '../img/alipay.jpg'
     # 微信捐赠按钮配置
     -
         type: wechat
         # Wechat qrcode image URL
-        qrcode: '/img/wechatpay.jpg'
+        qrcode: '../img/wechatpay.jpg'
     # "Afdian.net" 捐赠按钮配置
     #-
     #    type: afdian
@@ -372,7 +372,7 @@ widgets:
         # 当前位置
         location: 深圳
         # 图像URL
-        avatar: /img/logo.png
+        avatar: ../img/logo.png
         # 是否显示圆形头像图像
         avatar_rounded: true
         # Gravatar头像邮箱地址
