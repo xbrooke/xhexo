@@ -1,0 +1,556 @@
+#######_config.yml#############
+# 网站
+# 网站标题
+title: mi7小站
+# 网站副标题
+subtitle: mi7小站
+# 网站描述
+description: 分享点有用的
+# 网站的关键词。支持多个关键词。
+keywords: null
+# 您的名字
+author: wuchao
+# 网站使用的语言。对于简体中文用户来说，使用不同的主题可能需要设置成不同的值，请参考你的主题的文档自行设置，常见的有 zh-Hans和 zh-CN。
+language: zh-CN
+# 网站时区
+timezone: Asia/Shanghai
+######################################
+# 网址
+# 网址, 必须以 http:// 或 https:// 开头
+url: http://mi7.net
+# root  网站根目录
+# 文章的 永久链接 格式
+# permalink: ':year/:month/:day/:title/'
+permalink: '/pages/:title/'
+# 永久链接中各部分的默认值
+permalink_defaults: null
+# 改写 permalink 的值来美化 URL
+pretty_urls:
+  # 是否在永久链接中保留尾部的 index.html，设置为 false 时去除
+  trailing_index: true
+  # 是否在永久链接中保留尾部的 .html, 设置为 false 时去除 (对尾部的 index.html无效)
+  trailing_html: true
+#####################################
+# 目录
+# 资源文件夹，这个文件夹用来存放内容。
+source_dir: source
+# 公共文件夹，这个文件夹用于存放生成的站点文件。
+public_dir: public
+# 标签文件夹
+tag_dir: tags
+# 归档文件夹
+archive_dir: archives
+# 分类文件夹
+category_dir: categories
+# Include code 文件夹，source_dir 下的子目录
+code_dir: downloads/code
+# 国际化（i18n）文件夹
+i18n_dir: ':lang'
+# 跳过指定文件的渲染。匹配到的文件将会被不做改动地复制到 public 目录中。
+# 您可使用 glob 表达式来匹配路径。
+skip_render: 404.html
+######################################
+# 文章
+# 新文章的文件名称
+new_post_name: ':title.md'
+# 预设布局
+default_layout: post
+# 把标题转换为 标题大写
+titlecase: true
+external_link:
+  # 在新标签中打开链接
+  enable: true
+  # 对整个网站（site）生效或仅对文章（post）生效
+  field: site
+  # 需要排除的域名。主域名和子域名如 www 需分别配置
+  exclude: ''
+# 把文件名称转换为 (1) 小写或 (2) 大写
+filename_case: 0
+# 显示草稿
+render_drafts: false
+# 启动 Asset 文件夹 资源（Asset）代表 source 文件夹中除了文章以外的所有文件，例如图片、CSS、JS 文件等。
+post_asset_folder: false
+# 把链接改为与根目录的相对位址
+relative_link: false
+# 显示未来的文章
+future: true
+syntax_highlighter: highlight.js
+# 代码块的设置, 请参考 Highlight.js 进行设置
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+# 代码块的设置, 请参考 PrismJS 进行设置
+prismjs:
+  enable: false
+  preprocess: true
+  line_number: true
+  tab_replace: ''
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: '-date'
+###################################
+# 分类 & 标签
+# 默认分类
+default_category: uncategorized
+# 分类别名
+category_map: null
+# 标签别名
+tag_map: null
+meta_generator: true
+##################################
+# Hexo 使用 Moment.js 来解析和显示时间。
+# 日期格式
+date_format: YYYY-MM-DD
+# 时间格式
+time_format: HH:mm:ss
+# 当 Front Matter 中没有指定 updated 时 updated 的取值
+# mtime: 使用文件的最后修改时间。这是从 Hexo 3.0.0 开始的默认行为。
+# date: 使用 date 作为 updated 的值。可被用于 Git 工作流之中，因为使用 Git 管理站点时，文件的最后修改日期常常会发生改变
+# empty: 直接删除 updated。使用这一选项可能会导致大部分主题和插件无法正常工作。
+updated_option: mtime
+###################################
+# 分页
+# 每页显示的文章量 (0 = 关闭分页功能)
+per_page: 10
+# 分页目录
+pagination_dir: page
+##################################
+# 在 Hexo 配置文件中，通过设置 include/exclude 可以让 Hexo 进行处理或忽略某些目录和文件夹。你可以使用 glob 表达式 对目录和文件进行匹配。
+# Hexo 默认会忽略隐藏文件和文件夹（包括名称以下划线和 . 开头的文件和文件夹，Hexo 的 _posts 和 _data 等目录除外）。
+include: null
+# Hexo 会忽略这些文件和目录
+exclude:
+# Ignore files/folders
+ignore:
+##################################
+# 扩展
+# 当前主题名称。值为false时禁用主题
+theme: icarus
+# 部署仓库
+deploy:
+  type: git
+  repo: git@你的服务器地址:/home/git/blog.git
+  branch: master
+#######_config.icarus.yml#############
+# Version of the configuration file
+version: 5.1.0
+# Icarus 主题样式，一种默认，一种赛博朋克"default" or "cyberpunk"
+variant: default
+# 顶部logo 设置你站点的logo。 此logo会显示在导航栏和页脚。 图片或者是文字
+logo: /img/logo.jpg
+# 页面元数据配置
+head:
+    # 浏览器图标
+    favicon: /img/favicon.svg
+    # Web应用程序清单配置 Icarus支持基本的PWAmanifest.json的生成与Meta标签
+    # https://developer.mozilla.org/en-US/docs/Web/Manifest
+    manifest:
+        # web应用程序的名称(默认为站点标题)
+        name: 徐大兵
+        # 显示的web应用程序名称
+        short_name: 徐大兵
+        # web应用程序的起始URL
+        start_url: https://mi7.net
+        # 应用程序的默认主题颜色
+        theme_color: 
+        # 在加载样式表之前，要显示的应用程序页面的占位符背景颜色
+        background_color: 
+        # 网站的首选显示模式
+        display: standalone
+        # 可以作为不同上下文的应用程序图标的图像文件
+        icons:
+            -
+                # 映像文件的路径
+                src: ''
+                # 包含空格分隔的图像维数的字符串
+                sizes: ''
+                # 关于图像的媒体类型的提示
+                type: 
+        # 打开图元数据
+    # https://hexo.io/docs/helpers.html#open-graph
+    open_graph:
+        # 页面标题(og:title)(可选)
+        title: mi7net
+        # 页面类型(og:type)(可选)
+        type: blog
+        # 页面URL (og: URL)(可选)
+        url: https://mi7.net/
+        # 封面地址 (og:image) (可选)
+        image: 
+        # 站点名 (og:site_name) (可选)
+        site_name: 
+        # 创建作者 (article:author) (可选)
+        author: 
+        # 页面描述 (og:description) (可选)
+        description: 
+        # Twitter card type (twitter:card)
+        twitter_card: 
+        # Twitter ID (twitter:creator)
+        twitter_id: 
+        # Twitter Site (twitter:site)
+        twitter_site: 
+        # Google+ profile link (deprecated)
+        google_plus: 
+        # Facebook admin ID
+        fb_admins: 
+        # Facebook App ID
+        fb_app_id: 
+    # 页面的结构化数据
+    # https://developers.google.com/search/docs/guides/intro-structured-data
+    structured_data:
+        # 页标题 (可选)
+        title: 
+        # 页面描述 (可选)
+        description: 
+        # 链接页面网址 (可选)
+        url: 
+        # 创建作者 (article:author) (可选)
+        author: 
+        # 页面的出版商 (可选)
+        publisher: 
+        # 页面出版商标志 (可选)
+        publisher_logo: 
+        # 页面图片 (可选)
+        image: 
+    # 数组中的附加HTML元标记
+    meta:
+        # Meta tag specified in <attribute>=<value> style
+        # E.g., name=theme-color;content=#123456 => <meta name="theme-color" content="#123456">
+        - ''
+    # 网址或路径到网站的RSS atom.xml
+    rss: atom.xml
+# 页面顶部导航栏配置
+navbar:
+    # 导航菜单项
+    menu:
+        首页: /
+        文章归档: /archives
+        分类: /categories
+        标签: /tags
+        留言: /message
+        关于: /about
+    # 导航右侧快捷方式
+    # links:
+    #     Gitee:
+    #         icon: fab fa-git-square
+    #         url: 'https://gitee.com/wuchao321'
+# 页脚
+footer:
+    # Copyright text
+    # copyright: © 2023
+    # Links to be shown on the right of the footer section
+    # 右侧超链接设置
+    links:
+        知识共享:
+            icon: fab fa-creative-commons
+            url: 'https://creativecommons.org/'
+        CC BY-NC 4.0:
+            icon: fab fa-creative-commons-by
+            url: 'https://creativecommons.org/licenses/by-nc/4.0/deed.zh'
+        Download on Gitee:
+            icon: fab fa-git-square
+            url: 'https://gitee.com/wuchao321'
+# 文章相关配置
+article:
+    # 代码高亮显示设置
+    highlight:
+        # 代码高亮显示主题
+        # https://github.com/highlightjs/highlight.js/tree/master/src/styles
+        theme: atom-one-light
+        # 显示复制代码按钮
+        clipboard: true
+        # 代码块的默认折叠状态。 可以是 "", "folded", "unfolded"
+        fold: unfolded
+    # 显示文章字数统计以及预计阅读时间。
+    readtime: true
+    # 文章许可协议
+    licenses:
+        Creative Commons:
+            icon: fab fa-creative-commons
+            url: 'https://creativecommons.org/'
+        Attribution:
+            icon: fab fa-creative-commons-by
+            url: 'https://creativecommons.org/licenses/by-nc/4.0/'
+        Noncommercial:
+            icon: fab fa-creative-commons-nc
+            url: 'https://creativecommons.org/licenses/by-nc/4.0/'
+# 搜索插件配置
+# https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Search/
+search:
+    type: insight
+# 评论插件配置-这里使用的畅言
+# https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
+comment:
+    type: valine
+    app_id: iCu4v9Qxxxxxxxx
+    app_key: ENtPhFixxxx
+    placeholder: "欢迎留言交流~"      # 可选填
+    avatar: monsterid               # 可选填
+    avatar_force: false             # 可选填
+    meta: ["nick", "mail", "link"]  # 可选填
+    page_size: 10                   # 可选填
+    lang: zh-CN                     # 可选填
+    visitor: true                   # 是否允许游客评论 ，进入官网查看设置：https://valine.js.org/visitor.html
+    highlight: true                 # 可选填
+    record_ip: false                # 可选填
+    server_urls:                    # 可选填
+    emoji_cdn:                      # 可选填
+    emoji_maps:                     # 可选填
+    enable_qq: false                # 可选填
+    required_fields: []             # 可选填
+# 捐赠插件配置
+# https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
+donates:
+    # 支付宝捐赠按钮配置
+    -
+        type: alipay
+        # Alipay qrcode image URL
+        qrcode: '/img/alipay.jpg'
+    # 微信捐赠按钮配置
+    -
+        type: wechat
+        # Wechat qrcode image URL
+        qrcode: '/img/wechatpay1.jpg'
+    # "Afdian.net" 捐赠按钮配置
+    #-
+    #    type: afdian
+        # URL to the "Afdian.net" personal page
+    #    url: ''
+    # "Buy me a coffee" donate button configurations
+    #-
+    #    type: buymeacoffee
+        # URL to the "Buy me a coffee" page
+    #    url: ''
+    # Patreon donate button configurations
+    #-
+    #    type: patreon
+        # URL to the Patreon page
+    #    url: ''
+    # Paypal donate button configurations
+    #-
+    #    type: paypal
+        # Paypal business ID or email address
+    #    business: ''
+        # Currency code
+    #    currency_code: USD
+# 分享插件配置
+# https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Share/
+share:
+    type: addtoany
+    # URL to the ShareThis share plugin script
+    install_url: ''
+# 侧边栏的配置。
+# 请注意，侧边栏只有在至少有一个小部件时才可见
+sidebar:
+    # 左栏的配置
+    left:
+        # 当页面滚动时左侧侧边栏是否停留在顶部
+        sticky: false
+    # 右栏的配置
+    right:
+        sticky: true
+# 布局配置文件遵循着与主题配置文件相同的格式和定义。
+#    _config.post.yml中的配置对所有文章生效，而_config.page.yml中的配置对所有自定义页面生效。
+#    这两个文件将覆盖主题配置文件中的配置。
+# 注： 如果想对于文章进行单独设置时，我们就启用_config.post.yml配置文件配置
+# http://ppoffice.github.io/hexo-theme-icarus/categories/Widgets/
+widgets:
+    # 个人信息小部件配置
+    -
+        # 小部件应该放在哪里，左边栏还是右边栏
+        position: left
+        type: profile
+        # 作者名称
+        author: 徐大兵
+        # 作者标题
+        author_title: 记录、分享~
+        # 当前位置
+        location: 中国·深圳
+        # 图像URL
+        avatar: /img/avatar1.jpg
+        # 是否显示圆形头像图像
+        avatar_rounded: true
+        # Gravatar头像邮箱地址
+        gravatar:
+        # 关注按钮的URL或路径
+        follow_link: 'https://gitee.com/wuchao321'
+        # 底部快捷连接配置
+        social_links:
+            Gitee:
+                icon: fab fa-git-square
+                url: 'https://gitee.com/wuchao321'
+            Email:
+                icon: fa fa-envelope
+                url: 'mailto:eryueren@163.com'
+            Weibo:
+                icon: fab fa-weibo
+                url: ''
+            WeiXin:
+                icon: fab fa-weixin
+                url: ''
+            # Next:
+            #     icon: fab fa-dribbble
+            #     url: 'https://mi7.net'
+            # RSS:
+            #     icon: fas fa-rss
+            #     url: /
+    # 目录 小部件配置
+    -
+        # 小部件显示位置
+        position: left
+        type: toc
+        # 是否显示每个标题的索引
+        index: true
+        # 是否在看不到副标题时折叠副标题
+        collapsed: true
+        # 标题显示的最高水平
+        depth: 3
+    # 链接小部件配置
+    -
+        # 左边栏还是右边栏
+        position: left
+        type: links
+        # 站点的名称和url
+        links:
+            Hexo: 'https://hexo.io'
+            Gitee: 'https://gitee.com/wuchao321'
+    # 分类小部件配置
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: right
+        type: categories
+    # 最新文章小部件配置
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: right
+        type: recent_posts
+    # 档案小部件的配置
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: right
+        type: archives
+    # 标签小部件的配置
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: right
+        type: tags
+    # # 邮件订阅widget配置
+    # -
+    #     # Where should the widget be placed, left sidebar or right sidebar
+    #     position: left
+    #     type: subscribe_email
+    #     # Hint text under the email input
+    #     description: 
+    #     # Feedburner ID
+    #     feedburner_id: ''
+    # # 谷歌AdSense单元配置
+    # -
+    #     # Where should the widget be placed, left sidebar or right sidebar
+    #     position: right
+    #     type: adsense
+    #     #  data-ad-client
+    #     client_id: ''
+    #     # data-ad-slot
+    #     slot_id: ''
+    # # Follow.跟进。它的电子邮件订阅小部件配置
+    # -
+    #     # Where should the widget be placed, left sidebar or right sidebar
+    #     position: left
+    #     type: followit
+    #     # Hint text under the email input
+    #     description: 
+    #     # Subscription form action URL
+    #     action_url: ''
+    #     # Feed claiming verification code
+    #     verification_code: ''
+# 插件配置
+# https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/
+plugins:
+    # 启用页面启动动画
+    animejs: true
+    # 显示“返回顶部”按钮
+    back_to_top: true
+    # 百度分析插件设置
+    # https://tongji.baidu.com
+    baidu_analytics:
+        # Baidu Analytics tracking ID
+        tracking_id: 
+    # Bing网站管理员工具插件设置
+    # https://www.bing.com/toolbox/webmaster/
+    bing_webmaster:
+        # Bing Webmaster Tools tracking ID in the <meta> tag
+        tracking_id: 
+    # 不蒜子网页计数器
+    # https://busuanzi.ibruce.info
+    busuanzi: true
+    # CNZZ统计
+    # https://www.umeng.com/web
+    cnzz:
+        # CNZZ tracker id
+        id: 
+        # CNZZ website id
+        web_id: 
+    # 提醒用户cookies的使用
+    # https://www.osano.com/cookieconsent/
+    # cookie_consent:
+    #     # The compliance type. Can be "info", "opt-in", or "opt-out"
+    #     type: info
+    #     # Theme of the popup. Can be "block", "edgeless", or "classic"
+    #     theme: edgeless
+    #     # Whether the popup should stay static regardless of the page scrolls
+    #     static: false
+    #     # Where on the screen the consent popup should display
+    #     position: bottom-left
+    #     # URL to your site's cookie policy
+    #     policyLink: 'https://www.cookiesandyou.com/'
+    # Enable the lightGallery and Justified Gallery plugins
+    gallery: true
+    # 谷歌分析插件设置
+    # https://analytics.google.com
+    google_analytics:
+        # Google Analytics tracking ID
+        tracking_id: 
+    # Hotjar user feedback plugin
+    # https://www.hotjar.com/
+    hotjar:
+        # Hotjar site id
+        site_id: 
+    # Enable the KaTeX math typesetting support
+    # https://katex.org/
+    katex: false
+    # Enable the MathJax math typesetting support
+    # https://www.mathjax.org/
+    mathjax: false
+    # 浏览器升级提醒
+    # http://outdatedbrowser.com/
+    outdated_browser: false
+    # 网页载入进度条
+    progressbar: true
+    # Statcounter statistics
+    # https://statcounter.com/
+    statcounter:
+        # Statcounter project id
+        project: 
+        # Statcounter project security code
+        security: 
+    # Twitter conversion tracking plugin settings
+    # https://business.twitter.com/en/help/campaign-measurement-and-analytics/conversion-tracking-for-websites.html
+    twitter_conversion_tracking:
+        # Twitter Pixel ID
+        pixel_id: 
+# CDN 提供商
+# https://ppoffice.github.io/hexo-theme-icarus/Configuration/Theme/speed-up-your-site-with-custom-cdn/
+providers:
+    # Name or URL template of the JavaScript and/or stylesheet CDN provider
+    cdn: jsdelivr
+    # Name or URL template of the webfont CDN provider
+    fontcdn: google
+    # Name or URL of the fontawesome icon font CDN provider
+    iconcdn: fontawesome
+encrypt:
+    enable: true
