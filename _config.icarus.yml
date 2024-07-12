@@ -1,15 +1,15 @@
 #######_config.yml#############
 # 网站
 # 网站标题
-title: mi7小站
+title: 徐大兵
 # 网站副标题
-subtitle: mi7小站
+subtitle: 徐大兵
 # 网站描述
-description: 分享点有用的
+description: 分享生活与车机
 # 网站的关键词。支持多个关键词。
 keywords: null
 # 您的名字
-author: wuchao
+author: Brooke
 # 网站使用的语言。对于简体中文用户来说，使用不同的主题可能需要设置成不同的值，请参考你的主题的文档自行设置，常见的有 zh-Hans和 zh-CN。
 language: zh-CN
 # 网站时区
@@ -17,7 +17,7 @@ timezone: Asia/Shanghai
 ######################################
 # 网址
 # 网址, 必须以 http:// 或 https:// 开头
-url: http://mi7.net
+url: https://xbrooke.github.io/xhexo/
 # root  网站根目录
 # 文章的 永久链接 格式
 # permalink: ':year/:month/:day/:title/'
@@ -142,11 +142,11 @@ version: 5.1.0
 # Icarus 主题样式，一种默认，一种赛博朋克"default" or "cyberpunk"
 variant: default
 # 顶部logo 设置你站点的logo。 此logo会显示在导航栏和页脚。 图片或者是文字
-logo: /img/logo.jpg
+logo: /img/logo.png
 # 页面元数据配置
 head:
     # 浏览器图标
-    favicon: /img/favicon.svg
+    favicon: /img/logo.png
     # Web应用程序清单配置 Icarus支持基本的PWAmanifest.json的生成与Meta标签
     # https://developer.mozilla.org/en-US/docs/Web/Manifest
     manifest:
@@ -155,7 +155,7 @@ head:
         # 显示的web应用程序名称
         short_name: 徐大兵
         # web应用程序的起始URL
-        start_url: https://mi7.net
+        start_url: https://xbrooke.github.io/xhexo/
         # 应用程序的默认主题颜色
         theme_color: 
         # 在加载样式表之前，要显示的应用程序页面的占位符背景颜色
@@ -175,15 +175,15 @@ head:
     # https://hexo.io/docs/helpers.html#open-graph
     open_graph:
         # 页面标题(og:title)(可选)
-        title: mi7net
+        title: Brooke
         # 页面类型(og:type)(可选)
         type: blog
         # 页面URL (og: URL)(可选)
-        url: https://mi7.net/
+        url: https://xbrooke.github.io/xhexo/
         # 封面地址 (og:image) (可选)
         image: 
         # 站点名 (og:site_name) (可选)
-        site_name: 
+        site_name: 徐大兵
         # 创建作者 (article:author) (可选)
         author: 
         # 页面描述 (og:description) (可选)
@@ -242,7 +242,7 @@ navbar:
 # 页脚
 footer:
     # Copyright text
-    # copyright: © 2023
+    copyright: © 2024
     # Links to be shown on the right of the footer section
     # 右侧超链接设置
     links:
@@ -252,9 +252,9 @@ footer:
         CC BY-NC 4.0:
             icon: fab fa-creative-commons-by
             url: 'https://creativecommons.org/licenses/by-nc/4.0/deed.zh'
-        Download on Gitee:
+        Download on GitHub:
             icon: fab fa-git-square
-            url: 'https://gitee.com/wuchao321'
+            url: 'https://github.com/xbrooke'
 # 文章相关配置
 article:
     # 代码高亮显示设置
@@ -287,8 +287,8 @@ search:
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
 comment:
     type: valine
-    app_id: iCu4v9Qxxxxxxxx
-    app_key: ENtPhFixxxx
+    app_id: Ppd2qQnQXG4cIbSTxJCdA6G9-gzGzoHsz
+    app_key: BWHZKKujXrjV9aDQmAJL6ghR
     placeholder: "欢迎留言交流~"      # 可选填
     avatar: monsterid               # 可选填
     avatar_force: false             # 可选填
@@ -315,7 +315,7 @@ donates:
     -
         type: wechat
         # Wechat qrcode image URL
-        qrcode: '/img/wechatpay1.jpg'
+        qrcode: '/img/wechatpay.jpg'
     # "Afdian.net" 捐赠按钮配置
     #-
     #    type: afdian
@@ -370,15 +370,15 @@ widgets:
         # 作者标题
         author_title: 记录、分享~
         # 当前位置
-        location: 中国·深圳
+        location: 深圳
         # 图像URL
-        avatar: /img/avatar1.jpg
+        avatar: /img/logo.png
         # 是否显示圆形头像图像
         avatar_rounded: true
         # Gravatar头像邮箱地址
         gravatar:
         # 关注按钮的URL或路径
-        follow_link: 'https://gitee.com/wuchao321'
+        follow_link: 'https://github.com/xbrooke'
         # 底部快捷连接配置
         social_links:
             Gitee:
@@ -386,7 +386,7 @@ widgets:
                 url: 'https://gitee.com/wuchao321'
             Email:
                 icon: fa fa-envelope
-                url: 'mailto:eryueren@163.com'
+                url: 'mailto:554719247@qq.com'
             Weibo:
                 icon: fab fa-weibo
                 url: ''
@@ -418,7 +418,7 @@ widgets:
         # 站点的名称和url
         links:
             Hexo: 'https://hexo.io'
-            Gitee: 'https://gitee.com/wuchao321'
+            Weibo: 'https://gitee.com/wuchao321'
     # 分类小部件配置
     -
         # Where should the widget be placed, left sidebar or right sidebar
