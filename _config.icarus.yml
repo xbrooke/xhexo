@@ -142,11 +142,11 @@ version: 5.1.0
 # Icarus 主题样式，一种默认，一种赛博朋克"default" or "cyberpunk"
 variant: default
 # 顶部logo 设置你站点的logo。 此logo会显示在导航栏和页脚。 图片或者是文字
-logo: https://im.gurl.eu.org/file/c3754aa9a04ffd1b67245.png
+logo: https://img.xbrooke.cn/file/199753263dae693f8b87d.png
 # 页面元数据配置
 head:
     # 浏览器图标
-    favicon: https://im.gurl.eu.org/file/c3754aa9a04ffd1b67245.png
+    favicon: https://img.xbrooke.cn/file/199753263dae693f8b87d.png
     # Web应用程序清单配置 Icarus支持基本的PWAmanifest.json的生成与Meta标签
     # https://developer.mozilla.org/en-US/docs/Web/Manifest
     manifest:
@@ -310,12 +310,12 @@ donates:
     -
         type: alipay
         # Alipay qrcode image URL
-        qrcode: '../img/alipay.jpg'
+        qrcode: 'https://img.xbrooke.cn/file/9ce7b78cf4b5e71878987.jpg'
     # 微信捐赠按钮配置
     -
         type: wechat
         # Wechat qrcode image URL
-        qrcode: 'https://im.gurl.eu.org/file/c3754aa9a04ffd1b67245.png'
+        qrcode: 'https://img.xbrooke.cn/file/d4f1455e654904a98b417.jpg'
     # "Afdian.net" 捐赠按钮配置
     #-
     #    type: afdian
@@ -372,7 +372,7 @@ widgets:
         # 当前位置
         location: 深圳
         # 图像URL
-        avatar: https://im.gurl.eu.org/file/c3754aa9a04ffd1b67245.png
+        avatar: https://img.xbrooke.cn/file/199753263dae693f8b87d.png
         # 是否显示圆形头像图像
         avatar_rounded: true
         # Gravatar头像邮箱地址
