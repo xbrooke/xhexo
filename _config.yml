@@ -5,8 +5,9 @@ keywords: null
 author: John Doe
 language: zh-CN
 timezone: ''
-url: https://xbrooke.github.io/xhexo/
-root: /xhexo/
+#url: https://xbrooke.github.io/xhexo/
+url: https://bb.xbrooke.cn
+#root: /xhexo/
 permalink: ':year/:month/:day/:title/'
 permalink_defaults: null
 pretty_urls:
